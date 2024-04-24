@@ -6,20 +6,20 @@ load_dotenv()
 
 DATABASES = {
     'default': {
-        'ENGINE': os.environ["ENGINE"],
-        'HOST': os.environ["HOST"],
-        'PORT': os.environ["PORT"],
-        'NAME': os.environ["NAME"],
-        'USER': os.environ["USER"],
-        'PASSWORD': os.environ["PASSWORD"],
+        'ENGINE': os.environ["DB_ENGINE"],
+        'HOST': os.environ["DB_HOST"],
+        'PORT': os.environ["DB_PORT"],
+        'NAME': os.environ["DB_NAME"],
+        'USER': os.environ["DB_USER"],
+        'PASSWORD': os.environ["DB_PASSWORD"],
     }
 }
 
-SECRET_KEY = os.environ["SECRET_KEY"]
+SECRET_KEY = os.environ["DB_SECRET_KEY"]
 
 INSTALLED_APPS = ['datacenter']
 
-DEBUG = os.environ["DEBUG"]
+DEBUG = os.environ["DB_DEBUG"]
 
 ROOT_URLCONF = 'project.urls'
 
