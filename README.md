@@ -15,7 +15,7 @@
 
 Доступны следущие переменные:
 - `DEBUG` — дебаг-режим. Поставьте `True`, чтобы увидеть отладочную информацию в случае ошибки. Выключается значением `False`.
-- `DB_SECRET_KEY` — секретный ключ проекта. Например: `erofheronoirenfoernfx49389f43xf3984xf9384`.
+- `SECRET_KEY` — секретный ключ проекта. Например: `erofheronoirenfoernfx49389f43xf3984xf9384`.
 - `DB_HOST` — см [документацию Django](https://docs.djangoproject.com/en/3.1/ref/settings/#allowed-hosts).
 - `DB_ENGINE` — Например: `django.db.backends.postgresql_psycopg2`.
 - `DB_PORT` — Ваш порт.
